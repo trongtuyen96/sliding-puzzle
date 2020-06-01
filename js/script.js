@@ -165,7 +165,7 @@
 		}
 		//if the puzzle is complete, the win message is displayed, and the number of wins is increased by one and added to local storage
 		if (complete == PUZZ_SIZE){
-			document.getElementById("winner").innerHTML = "Winner, Winner, Chicken Dinner!! Congratulations, You Won!";
+			document.getElementById("winner").innerHTML = "Congratulations, You Win!";
 			var wins = localStorage["winCount"];
 			wins++;
 			localStorage["winCount"] = wins;
