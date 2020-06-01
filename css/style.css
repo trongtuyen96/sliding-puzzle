@@ -10,6 +10,9 @@ body, #shuffle{
     height:360px;
 	position:relative;
 	margin:0px auto;
+	background-color: grey;
+	border-width: 2px;
+	border-color: grey;
 }
 .piece{
 	width:90px;
