@@ -1,0 +1,26 @@
+body{
+	text-align:center;
+}
+body, #shuffle{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:24px;
+}
+#puzzlearea{
+	width:400px;
+    height:400px;
+	position:relative;
+	margin:0px auto;
+}
+.piece{
+	width:100px;
+	height:100px;
+	/* border:1px solid black; */
+	/* font-size:40pt; */
+	position:absolute;
+	cursor:default;
+	background-image: url(https://i.ibb.co/L6TrT9w/1.jpg);
+}
+#winner{
+	color:red;
+	font-weight:bold;
+}
