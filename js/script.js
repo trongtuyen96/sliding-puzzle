@@ -1,6 +1,6 @@
 (function (){
 	var PUZZ_SIZE = 15;
-	var PIECE_SIZE = 90;
+	var PIECE_SIZE = 80;
 	var ROWS_COLS = 4;
 	var emptyX = 0;
 	var emptyY = 0;
