@@ -5,7 +5,7 @@ function game() {
 
 	// Data structure to hold positions of tiles
 	var parentX = document.querySelector(".sliding-puzzle").clientHeight;
-	var baseDistance = 34.5;
+	var baseDistance = 25.2;
 	var tileMap = {
 		1: {
 			tileNumber: 1,
@@ -28,37 +28,79 @@ function game() {
 		4: {
 			tileNumber: 4,
 			position: 4,
-			top: baseDistance,
-			left: 0
+			top: 0,
+			left: baseDistance * 3
 		},
 		5: {
 			tileNumber: 5,
 			position: 5,
 			top: baseDistance,
-			left: baseDistance
+			left: 0
 		},
 		6: {
 			tileNumber: 6,
 			position: 6,
 			top: baseDistance,
-			left: baseDistance * 2
+			left: baseDistance
 		},
 		7: {
 			tileNumber: 7,
 			position: 7,
-			top: baseDistance * 2,
-			left: 0
+			top: baseDistance,
+			left: baseDistance * 2
 		},
 		8: {
 			tileNumber: 8,
 			position: 8,
+			top: baseDistance,
+			left: baseDistance * 3
+		},
+		9: {
+			tileNumber: 9,
+			position: 9,
+			top: baseDistance * 2,
+			left: 0
+		},
+		10: {
+			tileNumber: 10,
+			position: 10,
 			top: baseDistance * 2,
 			left: baseDistance
 		},
-		empty: {
-			position: 9,
+		11: {
+			tileNumber: 11,
+			position: 11,
 			top: baseDistance * 2,
 			left: baseDistance * 2
+		},
+		12: {
+			tileNumber: 12,
+			position: 12,
+			top: baseDistance * 2,
+			left: baseDistance * 3
+		},
+		13: {
+			tileNumber: 13,
+			position: 13,
+			top: baseDistance * 3,
+			left: 0
+		},
+		14: {
+			tileNumber: 14,
+			position: 14,
+			top: baseDistance * 3,
+			left: baseDistance
+		},
+		15: {
+			tileNumber: 15,
+			position: 15,
+			top: baseDistance * 3,
+			left: baseDistance * 2
+		},
+		empty: {
+			position: 16,
+			top: baseDistance * 3,
+			left: baseDistance * 3
 		}
 	}
 
@@ -67,15 +109,22 @@ function game() {
 
 	// Movement map
 	function movementMap(position) {
-		if (position == 9) return [6, 8];
-		if (position == 8) return [5, 7, 9];
-		if (position == 7) return [4, 8];
-		if (position == 6) return [3, 5, 9];
-		if (position == 5) return [2, 4, 6, 8];
-		if (position == 4) return [1, 5, 7];
-		if (position == 3) return [2, 6];
-		if (position == 2) return [1, 3, 5];
-		if (position == 1) return [2, 4];
+		if (position == 16) return [12, 15];
+		if (position == 15) return [11, 14, 16];
+		if (position == 14) return [10, 13, 15];
+		if (position == 13) return [9, 14];
+		if (position == 12) return [8, 11, 16];
+		if (position == 11) return [7, 10, 12, 15];
+		if (position == 10) return [6, 9, 11, 14];
+		if (position == 9) return [5, 10, 13];
+		if (position == 8) return [4, 7, 12];
+		if (position == 7) return [3, 6, 8, 11];
+		if (position == 6) return [2, 5, 7, 10];
+		if (position == 5) return [1, 6, 9];
+		if (position == 4) return [3, 8];
+		if (position == 3) return [2, 4, 7];
+		if (position == 2) return [1, 3, 6];
+		if (position == 1) return [2, 5];
 	}
 
 	// Board setup according to the tileMap
@@ -100,7 +149,7 @@ function game() {
 		var translateString = "translateX(" + xMovement + "px) " + "translateY(" + yMovement + "px)"
 		tile.style.webkitTransform = translateString;
 		tile.style.backgroundPosition = -xMovement + "px " + -yMovement + "px";
-		tile.style.backgroundImage = 'url(https://i.ibb.co/L6TrT9w/1.jpg)';
+		tile.style.backgroundImage = 'url(https://i.ibb.co/7v0QmK3/5-1024x1024.jpg)';
 		recolorTile(tile, tileId);
 	}
 
@@ -170,14 +219,11 @@ function game() {
 		} else {
 			return false;
 		}
-
-
-
 	}
 
 	// Returns true/false based on if the puzzle has been solved
 	function checkSolution() {
-		if (tileMap.empty.position !== 9) return false;
+		if (tileMap.empty.position !== 16) return false;
 
 		for (var key in tileMap) {
 			if ((key != 1) && (key != "empty")) {
@@ -223,7 +269,7 @@ function game() {
 		var shuffleTiles = movementMap(emptyPosition);
 		var tilePosition = shuffleTiles[Math.floor(Math.floor(Math.random() * shuffleTiles.length))];
 		var locatedTile;
-		for (var i = 1; i <= 8; i++) {
+		for (var i = 1; i <= 15; i++) {
 			if (tileMap[i].position == tilePosition) {
 				var locatedTileNumber = tileMap[i].tileNumber;
 				locatedTile = tiles[locatedTileNumber - 1];

@@ -4,7 +4,6 @@ body {
 	font-size: 24px;
 	background-color: #ECF0F1;
 	-webkit-tap-highlight-color: transparent;
-	khtml-tap-highlight-color: transparent;
 }
 
 .sliding-puzzle-figure {
@@ -39,23 +38,23 @@ body {
 	box-sizing: border-box;
 	background-clip: border-box;
 	/* Firefox 4, Safari 5, Opera 10, IE 9 */
-	border: 18px solid #2C3E50;
-	border-radius: 10px;
+	border: 10px solid #2C3E50;
+	border-radius: 4px;
 	background-color: #2C3E50;
 }
 
 .sliding-puzzle-figure .sliding-puzzle .tile {
 	position: absolute;
-	background-color: #7BC8F3;
+	/* background-color: #7BC8F3; */
 	color: #1F1F1F;
-	border-radius: 10px;
+	border-radius: 4px;
 	cursor: pointer;
-	width: 31%;
-	height: 31%;
+	width: 24.5%;
+	height: 24.5%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 60px;
+	font-size: 0px;
 	left: 0%;
 	top: 0%;
 	transition: all 0.5s linear;
@@ -75,9 +74,9 @@ body {
 	}
 	.sliding-puzzle-figure .sliding-puzzle {
 		border-width: 10px;
-		border-radius: 14px;
+		border-radius: 4px;
 	}
 	.sliding-puzzle-figure .tile {
-		font-size: 1em;
+		font-size: 0em;
 	}
 }
