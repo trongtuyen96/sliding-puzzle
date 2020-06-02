@@ -10,8 +10,8 @@ body {
 	margin: auto;
 	height: 650px;
 	width: 650px;
-	max-height: 70vh;
-	max-width: 70vh;
+	max-height: 68vh;
+	max-width: 68vh;
 	padding-bottom: 50vh;
 	padding-top: 10vh;
 }
@@ -68,7 +68,7 @@ body {
 	.sliding-puzzle-figure {
 		width: 90vw;
 		height: 90vw;
-		max-height: 100vh;
+		max-height: 68vh;
 	}
 	.sliding-puzzle-figure .sliding-puzzle {
 		border-width: 10px;

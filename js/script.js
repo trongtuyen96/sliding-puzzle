@@ -5,7 +5,7 @@ function game() {
 
 	// Data structure to hold positions of tiles
 	var parentX = document.querySelector(".sliding-puzzle").clientHeight;
-	var baseDistance = 25.2;
+	var baseDistance = 25;
 	var tileMap = {
 		1: {
 			tileNumber: 1,
@@ -154,17 +154,15 @@ function game() {
 		recolorTile(tile, tileId);
 	}
 
-	function puzzleBG() {
-		var bg = document.getElementById("background").value;
-		var tiles = document.querySelectorAll('.tile');
-		for (var i = 0; i < tiles.length; i++) {
-			tiles[i].style.backgroundImage = 'url(' + bg + ')';
-		}
-	}
-
-	function backgroundSelector(){
+	function backgroundSelector() {
 		var select = document.getElementById("background");
-		select.onchange = puzzleBG;
+		select.onchange = () => {
+			var bg = document.getElementById("background").value;
+			var tiles = document.querySelectorAll('.tile');
+			for (var i = 0; i < tiles.length; i++) {
+				tiles[i].style.backgroundImage = 'url(' + bg + ')';
+			}
+		};
 	}
 
 	function tileClicked(event) {
