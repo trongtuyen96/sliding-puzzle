@@ -130,6 +130,7 @@ function game() {
 	// Board setup according to the tileMap
 	document.querySelector('#shuffle').addEventListener('click', shuffle, true);
 	document.querySelector('#solve').addEventListener('click', solve, true);
+	backgroundSelector();
 	var tiles = document.querySelectorAll('.tile');
 	var delay = -50;
 	for (var i = 0; i < tiles.length; i++) {
@@ -149,8 +150,21 @@ function game() {
 		var translateString = "translateX(" + xMovement + "px) " + "translateY(" + yMovement + "px)"
 		tile.style.webkitTransform = translateString;
 		tile.style.backgroundPosition = -xMovement + "px " + -yMovement + "px";
-		tile.style.backgroundImage = 'url(https://i.ibb.co/7v0QmK3/5-1024x1024.jpg)';
+		tile.style.backgroundImage = 'url(https://i.ibb.co/L6TrT9w/1.jpg)';
 		recolorTile(tile, tileId);
+	}
+
+	function puzzleBG() {
+		var bg = document.getElementById("background").value;
+		var tiles = document.querySelectorAll('.tile');
+		for (var i = 0; i < tiles.length; i++) {
+			tiles[i].style.backgroundImage = 'url(' + bg + ')';
+		}
+	}
+
+	function backgroundSelector(){
+		var select = document.getElementById("background");
+		select.onchange = puzzleBG;
 	}
 
 	function tileClicked(event) {

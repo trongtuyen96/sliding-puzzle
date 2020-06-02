@@ -37,7 +37,6 @@ body {
 	height: 100%;
 	box-sizing: border-box;
 	background-clip: border-box;
-	/* Firefox 4, Safari 5, Opera 10, IE 9 */
 	border: 10px solid #2C3E50;
 	border-radius: 4px;
 	background-color: #2C3E50;
@@ -45,7 +44,6 @@ body {
 
 .sliding-puzzle-figure .sliding-puzzle .tile {
 	position: absolute;
-	/* background-color: #7BC8F3; */
 	color: #1F1F1F;
 	border-radius: 4px;
 	cursor: pointer;
