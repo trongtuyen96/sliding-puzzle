@@ -5,7 +5,7 @@ function game() {
 
 	// Data structure to hold positions of tiles
 	var parentX = document.querySelector(".sliding-puzzle").clientHeight;
-	var baseDistance = 25;
+	var baseDistance = 25.2;
 	var tileMap = {
 		1: {
 			tileNumber: 1,
