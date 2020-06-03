@@ -11,7 +11,9 @@
 </head>
 
 <body>
-
+    <header>
+        <img src="images/logo.png" alt="Sliding Puzzle">
+    </header>
     <figure class="sliding-puzzle-figure">
 
         <ul class="sliding-puzzle">
@@ -32,18 +34,26 @@
             <li class="tile">15</li>
         </ul>
 
-        <figcaption>
-            <a id="shuffle">Shuffle</a> | <a id="solve">Solve</a>
-        </figcaption>
-        
-        <select id="background">
-            <option value='https://i.ibb.co/L6TrT9w/1.jpg'>#1</option>
-            <option value='https://i.ibb.co/Tk5J24h/2.jpg'>#2</option>
-            <option value='https://i.ibb.co/Q9vTn5x/3.jpg'>#3</option>
-            <option value='https://i.ibb.co/F3NK8g1/4.jpg'>#4</option>
-        </select>
+        <div id="controls">
+            <button class="btn btn-shuffle" id="shuffle">SHUFFLE</button>
+            <button class="btn btn-solve" id="solve">SOLVE</button>
+            <br>
+            <div class="box">
+                <select id="background">
+                    <option value='https://i.ibb.co/xMbH8yL/1-650x650.jpg'>Background 1</option>
+                    <option value='https://i.ibb.co/hsqmyK4/2-650x650.jpg'>Background 2</option>
+                    <option value='https://i.ibb.co/vzFn7rL/3-650x650.jpg'>Background 3</option>
+                    <option value='https://i.ibb.co/fN3Z4x7/4-650x650.jpg'>Background 4</option>
+                </select>
+            </div>
+        </div>
 
     </figure>
+    <footer>
+        <p>Created by
+            <a href="https://www.linkedin.com/in/tuyennguyen96/" target="_blank">Tuyen Nguyen</a>
+        </p>
+    </footer>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
