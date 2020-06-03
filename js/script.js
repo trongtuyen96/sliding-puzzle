@@ -131,6 +131,7 @@ function game() {
 	document.querySelector('#shuffle').addEventListener('click', shuffle, true);
 	document.querySelector('#solve').addEventListener('click', solve, true);
 	backgroundSelector();
+	document.querySelector('#overlay').addEventListener('click', endCongratsOverLay, true);
 	var tiles = document.querySelectorAll('.tile');
 	var delay = -50;
 	for (var i = 0; i < tiles.length; i++) {
@@ -171,6 +172,7 @@ function game() {
 
 		if (checkSolution()) {
 			console.log("You win!");
+			startCongratsOverLay();
 		}
 	}
 
@@ -316,5 +318,15 @@ function game() {
 			console.log("started");
 			solveTimeouts.push(setTimeout(moveTile, i * 100, tiles[history.pop() - 1], false));
 		}
+	}
+
+	// Open congrate overlay
+	function startCongratsOverLay() {
+		document.getElementById("overlay").style.display = "block";
+	}
+
+	// Close congrate overlay
+	function endCongratsOverLay() {
+		document.getElementById("overlay").style.display = "none";
 	}
 }
