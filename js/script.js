@@ -151,7 +151,7 @@ function game() {
 		var translateString = "translateX(" + xMovement + "px) " + "translateY(" + yMovement + "px)"
 		tile.style.webkitTransform = translateString;
 		tile.style.backgroundPosition = -xMovement + "px " + -yMovement + "px";
-		tile.style.backgroundImage = 'url(https://i.ibb.co/vzFn7rL/3-650x650.jpg)';
+		tile.style.backgroundImage = 'url(https://i.ibb.co/xMbH8yL/1-650x650.jpg)';
 		recolorTile(tile, tileId);
 	}
 
