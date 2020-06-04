@@ -136,7 +136,6 @@ function game() {
 	var delay = -50;
 	for (var i = 0; i < tiles.length; i++) {
 		tiles[i].addEventListener('click', tileClicked, true);
-
 		var tileId = tiles[i].innerHTML;
 		delay += 50;
 		setTimeout(setup, delay, tiles[i]);
@@ -144,15 +143,12 @@ function game() {
 
 	function setup(tile) {
 		var tileId = tile.innerHTML;
-		// tile.style.left = tileMap[tileId].left + '%';
-		// tile.style.top = tileMap[tileId].top + '%';
 		var xMovement = parentX * (tileMap[tileId].left / 100);
 		var yMovement = parentX * (tileMap[tileId].top / 100);
 		var translateString = "translateX(" + xMovement + "px) " + "translateY(" + yMovement + "px)"
 		tile.style.webkitTransform = translateString;
 		tile.style.backgroundPosition = -xMovement + "px " + -yMovement + "px";
 		tile.style.backgroundImage = 'url(https://i.ibb.co/xMbH8yL/1-650x650.jpg)';
-		recolorTile(tile, tileId);
 	}
 
 	function backgroundSelector() {
@@ -206,9 +202,6 @@ function game() {
 		tileMap.empty.left = tileMap[tileNumber].left;
 		tileMap.empty.position = tileMap[tileNumber].position;
 
-		// tile.style.top = emptyTop  + '%'; 
-		// tile.style.left = emptyLeft  + '%';
-
 		var xMovement = parentX * (emptyLeft / 100);
 		var yMovement = parentX * (emptyTop / 100);
 		var translateString = "translateX(" + xMovement + "px) " + "translateY(" + yMovement + "px)"
@@ -217,8 +210,6 @@ function game() {
 		tileMap[tileNumber].top = emptyTop;
 		tileMap[tileNumber].left = emptyLeft;
 		tileMap[tileNumber].position = emptyPosition;
-
-		recolorTile(tile, tileNumber);
 	}
 
 
@@ -249,16 +240,6 @@ function game() {
 		history = [];
 		return true;
 	}
-
-	// Check if tile is in correct place!
-	function recolorTile(tile, tileId) {
-		if (tileId == tileMap[tileId].position) {
-			tile.classList.remove("error");
-		} else {
-			tile.classList.add("error");
-		}
-	}
-
 
 	// Shuffles the current tiles
 	shuffleTimeouts = [];
