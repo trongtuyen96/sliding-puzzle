@@ -10,6 +10,7 @@
 
 <div align="center">
 	
+	[![GitHub contributors](https://img.shields.io/github/contributors/AbdallahHemdan/15PuzzleGame)](https://github.com/AbdallahHemdan/15PuzzleGame/contributors)
 	[![GitHub contributors](https://img.shields.io/github/contributors/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/contributors)
 	[![GitHub issues](https://img.shields.io/github/issues/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/issues)
 	[![GitHub forks](https://img.shields.io/github/forks/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/network)
