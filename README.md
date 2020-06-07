@@ -15,6 +15,7 @@
 	[![GitHub forks](https://img.shields.io/github/forks/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/network)
 	[![GitHub stars](https://img.shields.io/github/stars/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/stargazers)
 	[![GitHub license](https://img.shields.io/github/license/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/blob/master/LICENSE)
+	
 </div>
 
 ## Table of Contents
