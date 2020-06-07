@@ -30,7 +30,9 @@
 ## Demo
 <h3 align="center" style="bold">
   <p>Click below to play</p>
-  <a>[<img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/images/logo.png" alt="logo">](https://trongtuyen96.github.io/sliding-puzzle)</a>
+  <a alt="Play the game" href="https://trongtuyen96.github.io/sliding-puzzle">
+    <img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/images/logo.png" alt="logo" width="100">
+  </a>
 </h3>
 
 
