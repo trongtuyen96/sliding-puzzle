@@ -30,6 +30,7 @@
   
   <a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-3.PNG" alt="capture-3" width="400"></a>
 </h3>
+
 ## Demo
 <h3 align="center" style="bold">
   <p>Click below to play</p>
@@ -37,7 +38,6 @@
     <img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/images/logo.png" alt="logo" width="160">
   </a>
 </h3>
-
 
 ## Author
 <h4 align="center">
