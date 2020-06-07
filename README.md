@@ -23,9 +23,9 @@
 - Background selection: Change background within available options.
 
 ## Screenshots
-<a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-1.PNG" alt="capture-1" width="800></a>
-<a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-2.PNG" alt="capture-2" width="800></a>
-<a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-3.PNG" alt="capture-3" width="800></a>
+<a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-1.PNG" alt="capture-1" width="800"></a>
+<a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-2.PNG" alt="capture-2" width="800"></a>
+<a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-3.PNG" alt="capture-3" width="800"></a>
   
 ## Demo
 <h3 align="center" style="bold">
