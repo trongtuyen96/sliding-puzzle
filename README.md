@@ -8,13 +8,13 @@
 
 <h3 align="center" style="bold">A sliding puzzle game (15 puzzle) using HTML, CSS for UI layout and written by Javascript for behind functionality.</h3>
 
-<p align="center">
+<div align="center">
 [![GitHub contributors](https://img.shields.io/github/contributors/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/issues)
 [![GitHub forks](https://img.shields.io/github/forks/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/network)
 [![GitHub stars](https://img.shields.io/github/stars/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/stargazers)
 [![GitHub license](https://img.shields.io/github/license/trongtuyen96/sliding-puzzle)](https://github.com/trongtuyen96/sliding-puzzle/blob/master/LICENSE)
-</p>
+</div>
 
 ## Table of Contents
 - [Key Features](#key-features)
