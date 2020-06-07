@@ -34,7 +34,7 @@
 ## Demo
 <h3 align="center" style="bold">
   <p>Live at: https://trongtuyen96.github.io/sliding-puzzle</p>
-  <p style="italic">Or</p>
+  <p><em>Or</em></p>
   <p>Click below to play</p>
   <a alt="Play the game" href="https://trongtuyen96.github.io/sliding-puzzle">
     <img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/images/logo.png" alt="logo" width="160">
