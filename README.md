@@ -8,6 +8,24 @@
 
 <h3 align="center" style="bold">A sliding puzzle game (15 puzzle) using HTML, CSS for UI layout and written by Javascript for behind functionality.</h3>
 
+<p align="center">
+  <a alt="GitHub contributors" href="https://github.com/trongtuyen96/sliding-puzzle/contributors">
+    <img src="https://img.shields.io/github/contributors/trongtuyen96/sliding-puzzle">
+  </a>
+  <a alt="GitHub issues" href="https://github.com/trongtuyen96/sliding-puzzle/issues">
+    <img src="https://img.shields.io/github/issues/trongtuyen96/sliding-puzzle">
+  </a>
+  <a alt="GitHub forks" href="https://github.com/trongtuyen96/sliding-puzzle/network">
+    <img src="https://img.shields.io/github/forks/trongtuyen96/sliding-puzzle">
+  </a>
+  <a alt="GitHub stars" href="https://github.com/trongtuyen96/sliding-puzzle/stargazers">
+    <img src="https://img.shields.io/github/stars/trongtuyen96/sliding-puzzle">
+  </a>
+  <a alt="GitHub license" href="https://github.com/trongtuyen96/sliding-puzzle/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/trongtuyen96/sliding-puzzle">
+  </a>
+</p>
+
 ## Table of Contents
 - [Key Features](#key-features)
 - [Screenshots](#screenshots)
@@ -23,18 +41,23 @@
 - Background selection: Change background within available options.
 
 ## Screenshots
-<a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-1.PNG" alt="capture-1" width="800"></a>
-<a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-2.PNG" alt="capture-2" width="800"></a>
-<a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-3.PNG" alt="capture-3" width="800"></a>
+<h3 align="center">
+  <a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-1.PNG" alt="capture-1" width="400"></a>
+	
+  <a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-2.PNG" alt="capture-2" width="400"></a>
   
-## Demo
-<h3 align="center" style="bold">
-  <p>Click below to play</p>
-  <a alt="Play the game" href="https://trongtuyen96.github.io/sliding-puzzle">
-    <img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/images/logo.png" alt="logo" width="100">
-  </a>
+  <a><img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/covers/Capture-3.PNG" alt="capture-3" width="400"></a>
 </h3>
 
+## Demo
+<h4 align="center" style="bold">
+  <p>Live at https://trongtuyen96.github.io/sliding-puzzle</p>
+  <p><em>Or</em></p>
+  <p>Click below to play</p>
+  <a alt="Play the game" href="https://trongtuyen96.github.io/sliding-puzzle">
+    <img src="https://github.com/trongtuyen96/sliding-puzzle/blob/master/images/logo.png" alt="logo" width="160">
+  </a>
+</h4>
 
 ## Author
 <h4 align="center">
